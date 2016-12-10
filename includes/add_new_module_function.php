@@ -76,4 +76,4 @@ catch(PDOException $e) {
 $message = "new module function added successfully";
 
 
-header("Location: /ADRIAN-local-application/index.php?message=" . urlencode($message));
+header("Location: /" . strstr(ltrim($_SERVER['REQUEST_URI'], "/"), "/", true) . "/index.php?message=" . urlencode($message));

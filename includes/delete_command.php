@@ -51,4 +51,4 @@ catch(PDOException $e) {
 
 
 
-header( 'Location: /ADRIAN-local-application/index.php?message=command-deleted-successfully' ) ;
+header( 'Location: /' . strstr(ltrim($_SERVER['REQUEST_URI'], "/"), "/", true) . '/index.php?message=command-deleted-successfully' ) ;
