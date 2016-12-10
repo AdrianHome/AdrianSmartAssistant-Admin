@@ -94,7 +94,7 @@ VALUES
 ON DUPLICATE KEY UPDATE
 method_id  = :method_id,
 action_id  = :action_id,
-command_id = :module_function_id
+module_function_id = :module_function_id
 ";
 
 try {
